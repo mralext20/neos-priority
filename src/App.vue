@@ -83,7 +83,7 @@ export default {
   },
 
   async mounted() {
-    // let data = await fetch("https://api.neos.com/api/stats/priorityIssues");
+    // let res = await fetch("https://api.neos.com/api/stats/priorityIssues");
     // neos api has no CORS, so we use a mirror -
     let res = await fetch(
       "https://cors.bridged.cc/https://api.neos.com/api/stats/priorityIssues"
@@ -103,5 +103,9 @@ export default {
 
 .desc:after {
   content: "\25BC";
+}
+
+th:hover {
+  cursor: pointer;
 }
 </style>
