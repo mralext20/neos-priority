@@ -1,5 +1,7 @@
 # neos-priority
 
+a simple prority issue viewer for neosVR. 
+
 ## Project setup
 ```
 npm install
