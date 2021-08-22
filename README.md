@@ -2,6 +2,8 @@
 
 a simple prority issue viewer for neosVR. 
 
+this is currently hosted on https://neos.alext.duckdns.org/priority/
+
 ## Project setup
 ```
 npm install
