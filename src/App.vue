@@ -83,11 +83,7 @@ export default {
   },
 
   async mounted() {
-    // let res = await fetch("https://api.neos.com/api/stats/priorityIssues");
-    // neos api has no CORS, so we use a mirror -
-    let res = await fetch(
-      "https://cors.bridged.cc/https://api.neos.com/api/stats/priorityIssues"
-    );
+    let res = await fetch("https://api.neos.com/api/stats/priorityIssues");
     let data = await res.json();
     data.forEach((e) => {
       this.$data.issues.push(e);
