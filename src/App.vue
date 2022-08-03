@@ -83,7 +83,7 @@ export default {
   },
 
   async mounted() {
-    let res = await fetch("https://api.neos.com/api/stats/priorityIssues");
+    let res = await fetch("https://neos.alext.duckdns.org/videos/prioritys");
     let data = await res.json();
     data.forEach((e) => {
       this.$data.issues.push(e);
